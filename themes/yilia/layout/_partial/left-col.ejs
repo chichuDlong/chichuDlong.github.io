@@ -27,6 +27,10 @@
     			<% } %>
             <%}%>
 		</nav>
+		<nav>
+			<a>总文章数 <%=site.posts.length%></a>
+			<a>总字数 <span class="post-count"><%= totalcount(site, '0,0.0a') %></span></a>
+		</nav>
 		<nav class="header-nav">
 			<div class="social">
 				<% for (var i in theme.subnav){ %>
