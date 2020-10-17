@@ -45,6 +45,7 @@
     <div class="left-col" q-class="show:isShow">
       
 <div class="overlay" style="background: #4d4d4d"></div>
+<!-- 左侧边栏（上半部分）不设置背景颜色 -->
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
@@ -91,61 +92,34 @@
 					<a class="mail" target="_blank" href="mailto:1162288059@qq.com" title="mail"><i class="icon-mail"></i></a>
 		        
 			</div>
-			<!-- 《左侧边栏添加--APlayer音乐播放器 -->
-	
-		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
-		<!-- // 这里div的样式是笔者自己修改过的，你可以直接使用APlayer官方的原配置：<div id="aplayer"></div> -->
-		<!-- 可以修改left 和 bottom的值改变播放器位置 -->
-		<div id="aplayer" style="position:absolute;left;0;bottom:0;"></div>
-		<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/color-thief-don@2.0.2/src/color-thief.js"></script>
-		<script>
-			const ap = new APlayer({
-				container: document.getElementById('aplayer'),
-				autoplay: false,    //自动播放
-				listFolded: true,   //播放列表默认折叠
-				listMaxHeight: 90,  //播放列表最大高度
-				order: 'list',     //音频循环顺序, 可选值: 'list', 'random'
-				loop: 'all',      //音频循环播放, 可选值: 'all', 'one', 'none'
-				theme: '#b7daff',//切换音频时的主题色，优先级低于audio.theme
-				preload: 'none',//音频预加载，可选值: 'none', 'metadata', 'auto'
-				mutex: true,//互斥，阻止多个播放器同时播放，当前播放器播放时暂停其他播放器
-				lrcType: 3,//歌词格式，可选值：3（LRC文件歌词格式），1（JS字符串歌词格式）
-				volume: 0.7, //默认音量，请注意播放器会记忆用户设置，用户手动设置音量后默认音量即失效
-				fixed: true,//吸底模式（fixed:true），迷你模式（mini:true），普通模式（注释此行或者设置fixed:false）
-				audio: [{
-					name: '平凡之路',
-       				artist: '朴树',
-        			lrc: '/downloads/lrc/平凡之路-朴树.lrc',
-        			cover: 'http://p2.music.126.net/W_5XiCv3rGS1-J7EXpHSCQ==/18885211718782327.jpg?param=300x300',
-       				url: 'http://fs.open.kugou.com/cd5cbe8edb012e4f77b0857cefc0956e/5c66accf/G097/M08/0A/1F/AYcBAFkQGpOAMUpuAEm-3SlWMyk951.mp3'
-					},
-					{
-        			name: '大鱼',
-        			artist: '周深',
-        			lrc: '[00:00.000] 作曲 : 钱雷[00:01.000] 作词 : 尹约[00:43.20]海浪无声将夜幕深深淹没[00:49.87]漫过天空尽头的角落[00:56.69]大鱼在梦境的缝隙里游过[01:03.69]凝望你沉睡的轮廓[01:08.64][01:09.85]看海天一色 听风起雨落[01:16.44]执子手吹散苍茫茫烟波[01:23.33]大鱼的翅膀 已经太辽阔[01:31.13]我松开时间的绳索[01:36.04][01:37.12]怕你飞远去  怕你离我而去[01:43.92]更怕你永远停留在这里[01:50.81]每一滴泪水 都向你流淌去[01:58.35]倒流进天空的海底[02:03.40][02:19.34]海浪无声将夜幕深深淹没[02:25.85]漫过天空尽头的角落[02:32.79]大鱼在梦境的缝隙里游过[02:39.61]凝望你沉睡的轮廓[02:44.39][02:45.59]看海天一色 听风起雨落[02:52.53]执子手吹散苍茫茫烟波[02:59.37]大鱼的翅膀 已经太辽阔[03:07.10]我松开时间的绳索[03:12.05][03:13.11]看你飞远去  看你离我而去[03:19.95]原来你生来就属于天际[03:26.87]每一滴泪水 都向你流淌去[03:34.58]倒流回最初的相遇[03:59.31][04:08.02]',
-        			cover: '',
-        			url: 'http://music.163.com/song/media/outer/url?id=413812448.mp3'
-     				}
-				]
-			});
-		
-			<!-- 根据封面自适应主题色 -->
-			const colorThief = new ColorThief();
-			const setTheme = (index) => {
-				if (!ap.list.audios[index].theme) {
-					colorThief.getColorAsync(ap.list.audios[index].cover, function(color) {
-						ap.theme(`rgb(${color[0]}, ${color[1]}, ${color[2]})`, index);
-					});
-				}
-			};
-			setTheme(ap.list.index);
-			ap.on('listswitch', (data) => {
-				setTheme(data.index);
-			});
-		</script>
-		
-		<!-- 左侧边栏添加--APlayer音乐播放器》 -->
+<!-- 《左侧边栏添加--APlayer音乐播放器：详见：https://aplayer.js.org/#/zh-Hans/ -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+
+    <div id="aplayer" style="text-align:left"></div>
+    <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/color-thief-don@2.0.2/src/color-thief.js"></script>
+
+    <!-- 为方便修改，添加一个配置文件，修改时直接修改配置文件即可。 -->
+    <script type="text/javascript" src="/APlayer_config.js"></script>
+
+    <!-- 根据封面自适应主题色，主要是作用于进度条 -->
+    <script type="text/javascript">
+          const colorThief = new ColorThief();
+          const setTheme = (index) => {
+            if (!ap.list.audios[index].theme) {
+              colorThief.getColorAsync(ap.list.audios[index].cover, function(color) {
+                ap.theme(`rgb(${color[0]}, ${color[1]}, ${color[2]})`, index);
+              });
+            }
+          };
+          setTheme(ap.list.index);
+          ap.on('listswitch', (data) => {
+            setTheme(data.index);
+          });       
+    </script>
+
+<!-- 左侧边栏添加--APlayer音乐播放器》 -->
 		</nav>
 	</header>		
 </div>
@@ -666,5 +640,5 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
 </div>
   </div>
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/chitose.model.json"},"display":{"position":"left","width":300,"height":600,"hOffset":150,"vOffset":-20},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/chitose.model.json"},"display":{"position":"left","width":300,"height":600,"hOffset":150,"vOffset":-40},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
 </html>
