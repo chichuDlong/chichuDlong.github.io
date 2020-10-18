@@ -134,3 +134,6 @@ aboutme: 张军军<br><br>一个不懂人情世故的年轻人<br>多多关照
 # github: https://github.com/MoePlayer/APlayer
 aplayer:
   enable: true
+
+#头像是否旋转(如果不要旋转取false)
+avatarrotation: true
