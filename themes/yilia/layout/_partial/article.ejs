@@ -21,10 +21,7 @@
         <% } %>
       <% } else { %>
         <%- post.content %>
-      <% } %>
-  
-      
-
+      <% } %>    
       <% if ((theme.reward_type === 2 || (theme.reward_type === 1 && post.reward)) && !index){ %>
         <div class="page-reward">
           <a href="javascript:;" class="page-reward-btn tooltip-top">
@@ -46,7 +43,7 @@
                     <% if(theme.weixin) {%>
                     <div class="reward-box-item">
                       <img class="reward-img" src="<%= theme.weixin%>">
-                      <span class="reward-type">微信</span>
+                      <span class="reward-type">微信</span> 
                     </div>
                     <% } %>
                   </div>
@@ -55,8 +52,10 @@
             </span>
           </div>
           </a>
+<!--评论添加处1-->
+
         </div>
-      <% } %>
+      <% } %> 
     </div>
     <div class="article-info article-info-index">
       <%if(post.top){%>
@@ -80,6 +79,7 @@
     </div>
   </div>
 </article>
+
 <% if (!index){ %>
   <%- partial('post/nav') %>
 <% } %>
@@ -110,7 +110,22 @@
       url: config.url+url_for(post.path)
     }) %>
   <% } %>
-
+          <!-- 《utteranc评论：基于github issue的评论系统 -->
+          <% if (theme.utterance && theme.utterance.enable){ %>
+            <section id="comments" class="comments">
+              <style>
+                .utterances{max-width: 100%;}
+              </style>
+                <script src="https://utteranc.es/client.js"
+                        repo="<%= theme.utterance.repo %>"
+                        issue-term="<%= theme.utterance.issue_term %>"
+                        theme="<%= theme.utterance.theme %>"
+                        crossorigin="anonymous"
+                        async>
+                </script>
+          </section>
+          <% } %>
+          <!-- utteranc评论》 -->
   <% if (theme.disqus || config.disqus_shortname){ %>
     <section id="comments">
       <div id="disqus_thread"></div>
