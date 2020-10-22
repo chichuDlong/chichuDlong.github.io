@@ -2,7 +2,8 @@
   <div class="article-inner">
     <% if (post.link || post.title){ %>
       <header class="article-header">
-        <%- partial('post/title', {class_name: 'article-title'}) %>
+        <!--%- partial('post/title', {class_name: 'article-title'}) %>-->
+
         <% if (!post.noDate){ %>
         <%- partial('post/date', {class_name: 'archive-article-date', date_format: null}) %>
         <div align="center" class="post-count">
@@ -12,6 +13,7 @@
       </header>
     <% } %>
     <div class="article-entry" itemprop="articleBody">
+      <center><p><%- partial('post/title', {class_name: 'article-title'}) %></p></center>
       <% if (post.excerpt && index){ %>
         <%- post.excerpt %>
         <% if (theme.excerpt_link) { %>
