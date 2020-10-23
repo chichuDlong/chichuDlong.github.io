@@ -21,7 +21,13 @@
         <% } %>
       <% } else { %>
         <%- post.content %>
-      <% } %>    
+      <% } %> 
+<!-- 《添加版权声明 -->
+<% if(theme.declare){%>
+  <%- partial('post/declare') %>
+<% } %>
+<!-- 添加版权声明》 -->
+      
       <% if ((theme.reward_type === 2 || (theme.reward_type === 1 && post.reward)) && !index){ %>
         <div class="page-reward">
           <a href="javascript:;" class="page-reward-btn tooltip-top">
@@ -52,8 +58,6 @@
             </span>
           </div>
           </a>
-<!--评论添加处1-->
-
         </div>
       <% } %> 
     </div>
