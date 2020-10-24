@@ -2,8 +2,10 @@
 
 menu:
   主页: /
+  分类: /categories/index.html
   随笔: /tags/随笔/
   归档: /archives/index.html
+
 
 # SubNav
 subnav:
@@ -46,7 +48,7 @@ open_in_new: false
 # 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
 reward_type: 2
 # 打赏wording
-reward_wording: '谢谢打赏'
+reward_wording: '谢谢老板打赏'
 # 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
 alipay: /assets/AliPay.jpg
 # 微信二维码图片地址
@@ -98,7 +100,7 @@ gitment_oauth:
   client_id: ''           #client ID
   client_secret: ''       #client secret
 
- #7.utteranc评论： https://utteranc.es (参数配置详见主页)
+ #6.utteranc评论： https://utteranc.es (参数配置详见主页)
 utterance:
   enable: true
   repo: 'chichuDlong/chichuDlong.github.io'     #仓库名字,格式：你的用户ID/仓库名称，如：blog/utterance_repo
@@ -157,4 +159,13 @@ declare:
   licensee_url: https://creativecommons.org/licenses/by-nc-sa/4.0/        #当前应用的版权协议地址。
   licensee_name: 'CC BY-NC-SA 4.0'                                        #版权协议的名称
   licensee_alias: '知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议'       # alias别名
+<<<<<<< HEAD
   licensee_img: https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png    #版权协议的Logo
+=======
+  licensee_img: https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png    #版权协议的Logo
+
+
+# 是否开启字数统计
+#不需要使用，直接设置值为false，或注释掉
+word_count: True
+>>>>>>> 008d07cd98c2212251a263130af840cbd3d199de

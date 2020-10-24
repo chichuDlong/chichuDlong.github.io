@@ -2,18 +2,20 @@
   <div class="article-inner">
     <% if (post.link || post.title){ %>
       <header class="article-header">
-        <!--%- partial('post/title', {class_name: 'article-title'}) %>-->
-
+        <%- partial('post/title', {class_name: 'article-title'}) %>
         <% if (!post.noDate){ %>
         <%- partial('post/date', {class_name: 'archive-article-date', date_format: null}) %>
-        <div align="center" class="post-count">
-          字数：<%= wordcount(post.content) %>字 | 预计阅读时长：<%= min2read(post.content) %>分钟
-      </div>
+        <!-- 需要添加的位置 -->
+        <!-- 开始添加字数统计-->
+        <% if(theme.word_count && !post.no_word_count){%>
+          <%- partial('post/word') %>
+          <% } %>
+        <!-- 添加完成 -->
         <% } %>
       </header>
     <% } %>
     <div class="article-entry" itemprop="articleBody">
-      <center><p><%- partial('post/title', {class_name: 'article-title'}) %></p></center>
+      <!--<center><p><%- partial('post/title', {class_name: 'article-title'}) %></p></center> 取消中间的第二次标题显示，使用<center></center>可以使该内容居中 -->
       <% if (post.excerpt && index){ %>
         <%- post.excerpt %>
         <% if (theme.excerpt_link) { %>
@@ -26,8 +28,12 @@
 <% if(theme.declare){%>
   <%- partial('post/declare') %>
 <% } %>
+<<<<<<< HEAD
 <!-- 添加版权声明》 -->
       
+=======
+<!-- 添加版权声明》 -->   
+>>>>>>> 008d07cd98c2212251a263130af840cbd3d199de
       <% if ((theme.reward_type === 2 || (theme.reward_type === 1 && post.reward)) && !index){ %>
         <div class="page-reward">
           <a href="javascript:;" class="page-reward-btn tooltip-top">
