@@ -40,6 +40,20 @@
 
 <body>
   <div id="container" q-class="show:isCtnShow">
+<!--左上角添加丝带：fork me on github-->
+    <a class="fork" target="_blank" rel="noopener" href="https://github.com/chichuDlong/chichuDlong.github.io.git"><img width="149" height="149" src="https://github.blog/wp-content/uploads/2008/12/forkme_right_orange_ff7600.png?resize=149%2C149" class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
+    <style>
+       .fork{
+          position:fixed;
+          z-index:999;
+          top:0;
+          right:.5em
+       }
+    </style>
+    
+    <!-- 就是在原代码的基础上，a标签加上style，并且href的“https://github.com/you”改成你的项目地址就行 -->
+
+
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
@@ -54,11 +68,15 @@
 		  <h1 class="header-author"><a href="/">朔月</a></h1>
 		</hgroup>
 		
+		<p class="header-subtitle">Run fast to keep in the same place</p>
+		
 
 		<nav class="header-menu">
 			<ul>
 			
 				<li><a href="/">主页</a></li>
+	        
+				<li><a href="/categories/index.html">分类</a></li>
 	        
 				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
 	        
@@ -144,7 +162,11 @@
 			  <h1 class="header-author js-header-author">朔月</h1>
 			</hgroup>
 			
+			<p class="header-subtitle"><i class="icon icon-quo-left"></i>Run fast to keep in the same place<i class="icon icon-quo-right"></i></p>
 			
+			
+			
+				
 			
 				
 			
@@ -170,11 +192,13 @@
 				<ul style="width: 70%">
 				
 				
-					<li style="width: 33.333333333333336%"><a href="/">主页</a></li>
+					<li style="width: 25%"><a href="/">主页</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					<li style="width: 25%"><a href="/categories/index.html">分类</a></li>
 		        
-					<li style="width: 33.333333333333336%"><a href="/archives/index.html">归档</a></li>
+					<li style="width: 25%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+		        
+					<li style="width: 25%"><a href="/archives/index.html">归档</a></li>
 		        
 				</ul>
 			</nav>
