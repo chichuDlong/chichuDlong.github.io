@@ -159,13 +159,9 @@ declare:
   licensee_url: https://creativecommons.org/licenses/by-nc-sa/4.0/        #当前应用的版权协议地址。
   licensee_name: 'CC BY-NC-SA 4.0'                                        #版权协议的名称
   licensee_alias: '知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议'       # alias别名
-<<<<<<< HEAD
-  licensee_img: https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png    #版权协议的Logo
-=======
   licensee_img: https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png    #版权协议的Logo
 
 
 # 是否开启字数统计
 #不需要使用，直接设置值为false，或注释掉
 word_count: True
->>>>>>> 008d07cd98c2212251a263130af840cbd3d199de
