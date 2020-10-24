@@ -15,7 +15,7 @@
       </header>
     <% } %>
     <div class="article-entry" itemprop="articleBody">
-      <center><p><%- partial('post/title', {class_name: 'article-title'}) %></p></center>
+      <!--<center><p><%- partial('post/title', {class_name: 'article-title'}) %></p></center> 取消中间的第二次标题显示，使用<center></center>可以使该内容居中 -->
       <% if (post.excerpt && index){ %>
         <%- post.excerpt %>
         <% if (theme.excerpt_link) { %>
