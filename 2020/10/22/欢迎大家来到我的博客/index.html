@@ -243,23 +243,34 @@
         <!-- 开始添加字数统计-->
         
           <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <!--<img src="icon.png", width = "15px", height="15px">——添加标签并修改大小-->
-        <span class="post-meta-item-text"><img src="/assets/icon.png", width = "25px", height="25px"> 字数统计: </span>
-        <span class="post-count">88字</span>
-      </span>
-    </span>
+    <!--span class="post-time"-->
+      <!--span class="post-meta-item-icon"-->
+        <i class="icon-book" style="color:#000000;font-size:16px;"></i>
 
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text"><img src="/assets/shalou.jpg", width = "20px", height="30px"> 阅读时长≈ </span>
-        <span class="post-count">1分</span>
+        <!--添加标签并修改大小(实例如下):<img src="/assets/icon.png", width = "20px", height="20px">-->
+        <!--span class="post-meta-item-text"><img src="/assets/shalou.jpg", width = "15px", height="20px"> 阅读时长≈ </span>-->
+
+        <span class="post-meta-item-text" style="color:#000000;font-size:16px;"> 字数统计≈ </span>
+        <span class="post-count" style="color:#000000;font-size:16px;">88字</span>
+
+      <!--/span-->
+    <!--/span-->
+
+    &nbsp; | &nbsp;
+    <i class="icon-clock" style="color:#000080;font-size:16px;"></i>
+    <span class="post-meta-item-text" style="color:#000080;font-size:16px;"> 阅读时长≈ </span>
+    <span class="post-count" style="color:#000080;font-size:16px;">1分</span>
+
+
+
+    <!--显示单篇文章阅读次数-->
+    &nbsp; | &nbsp;
+      <span class="icon-smile" style="color:#f00000;font-size:16px;"></span>
+      <span id="busuanzi_container_page_pv" style="color:#f00000;font-size:16px;">
+          阅读数: <span id="busuanzi_value_page_pv" style="color:#f00000;font-size:16px;"></span>次
       </span>
-    </span>
+
+
 </div>
           
         <!-- 添加完成 -->
@@ -286,24 +297,24 @@
 <!-- #版权基础设定：0-关闭声明； 1-文章对应的md文件里有declare: true属性，才有版权声明； 2-所有文章均有版权声明 -->
 
   <div class="declare">
-    <strong class="author">本文作者：</strong>
+    <strong class="author">❤本文作者：</strong>
     
       朔月
     
     <br>
-    <strong class="create-time">发布时间：</strong>
+    <strong class="create-time">❤发布时间：</strong>
     2020-10-22
     <br>
-    <strong class="update-time">最后更新：</strong>
+    <strong class="update-time">❤最后更新：</strong>
     2020-10-24
     <br>
-    <strong class="article-titles">本文标题：</strong>
+    <strong class="article-titles">❤本文标题：</strong>
     <a href="http://example.com/2020/10/22/欢迎大家来到我的博客/" title="欢迎大家来到我的博客" target="_blank">欢迎大家来到我的博客</a>
     <br>
-    <strong class="article-url">本文链接：</strong>
+    <strong class="article-url">❤本文链接：</strong>
     <a href="http://example.com/2020/10/22/欢迎大家来到我的博客/" title="欢迎大家来到我的博客" target="_blank">http://example.com/2020/10/22/欢迎大家来到我的博客/</a>
     <br>
-    <strong class="copyright">版权声明：</strong>
+    <strong class="copyright">❤版权声明：</strong>
     本作品采用
     <a rel="license noopener" target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" title="知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议">CC BY-NC-SA 4.0</a>
     许可协议进行许可。转载请注明出处！
@@ -507,6 +518,7 @@
  
 
 <!-- 不蒜子统计添加 -->
+<!--<img src="icon.png", width = "15px", height="15px">——添加标签并修改大小-->
 
 
     <span id="busuanzi_container_site_pv"> 本站总访问量：<span id="busuanzi_value_site_pv"></span>（次）</span>
