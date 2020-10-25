@@ -100,7 +100,11 @@ gitment_oauth:
   client_id: ''           #client ID
   client_secret: ''       #client secret
 
- #6.utteranc评论： https://utteranc.es (参数配置详见主页)
+#6、是否开启访问量统计功能(不蒜子)
+busuanzi:
+ enable: true
+
+#7、utteranc评论： https://utteranc.es (参数配置详见主页)
 utterance:
   enable: true
   repo: 'chichuDlong/chichuDlong.github.io'     #仓库名字,格式：你的用户ID/仓库名称，如：blog/utterance_repo
@@ -165,3 +169,12 @@ declare:
 # 是否开启字数统计
 #不需要使用，直接设置值为false，或注释掉
 word_count: True
+
+
+# 网站运行时间，格式形如：“本站已安全运行 101 天 12 小时 13 分 41 秒”
+# Runing Time
+running_time:
+ enable: true
+ create_time: '10/12/2020 08:00:00' #此处修改你的建站时间或者网站上线时间
+
+

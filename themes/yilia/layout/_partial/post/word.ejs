@@ -1,19 +1,30 @@
 <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <!--<img src="icon.png", width = "15px", height="15px">——添加标签并修改大小-->
-        <span class="post-meta-item-text"><img src="/assets/icon.png", width = "25px", height="25px"> 字数统计: </span>
-        <span class="post-count"><%= wordcount(post.content) %>字</span>
-      </span>
-    </span>
+    <!--span class="post-time"-->
+      <!--span class="post-meta-item-icon"-->
+        <i class="icon-book" style="color:#000000;font-size:16px;"></i>
 
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text"><img src="/assets/shalou.jpg", width = "20px", height="30px"> 阅读时长≈ </span>
-        <span class="post-count"><%= min2read(post.content) %>分</span>
+        <!--添加标签并修改大小(实例如下):<img src="/assets/icon.png", width = "20px", height="20px">-->
+        <!--span class="post-meta-item-text"><img src="/assets/shalou.jpg", width = "15px", height="20px"> 阅读时长≈ </span>-->
+
+        <span class="post-meta-item-text" style="color:#000000;font-size:16px;"> 字数统计≈ </span>
+        <span class="post-count" style="color:#000000;font-size:16px;"><%= wordcount(post.content) %>字</span>
+
+      <!--/span-->
+    <!--/span-->
+
+    &nbsp; | &nbsp;
+    <i class="icon-clock" style="color:#000080;font-size:16px;"></i>
+    <span class="post-meta-item-text" style="color:#000080;font-size:16px;"> 阅读时长≈ </span>
+    <span class="post-count" style="color:#000080;font-size:16px;"><%= min2read(post.content) %>分</span>
+
+
+
+    <!--显示单篇文章阅读次数-->
+    &nbsp; | &nbsp;
+      <span class="icon-smile" style="color:#f00000;font-size:16px;"></span>
+      <span id="busuanzi_container_page_pv" style="color:#f00000;font-size:16px;">
+          阅读数: <span id="busuanzi_value_page_pv" style="color:#f00000;font-size:16px;"></span>次
       </span>
-    </span>
+
+
 </div>
