@@ -81,6 +81,13 @@ const ap = new APlayer({
                 //cover: '',
                 url: 'http://music.163.com/song/media/outer/url?id=1430583016.mp3'
             },
+            {
+                name: '破茧',
+                artist: '张韶涵',
+                //lrc: '',
+                //cover: '',
+                url: 'http://36.158.236.13/amobile.music.tc.qq.com/C400003kSb8X2Ie1Ue.m4a?guid=203449263&vkey=C62ED476C637BC6DDBE935CFE4B88995C44EC7BE7B9F817663B49D919F0D7760708C3BCD4FE08A8A6EFE1FED9394A5723C12EEFAEDADA53D&uin=0&fromtag=66'
+            },
         ]
 });
 
