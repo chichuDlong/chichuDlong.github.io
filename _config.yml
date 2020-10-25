@@ -139,11 +139,11 @@ live2d:
     use: live2d-widget-model-chitose
   display:
     position: left
-    width: 300
-    height: 600
-    hOffset: 150
-    vOffset: -40
+    width: 250
+    height: 450
+    hOffset: 175
+    vOffset: 250
   mobile:
     show: true
   react:
-    opacity: 0.7 # 透明度
+    opacity: 0.6 # 透明度

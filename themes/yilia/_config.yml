@@ -109,7 +109,7 @@ utterance:
   enable: true
   repo: 'chichuDlong/chichuDlong.github.io'     #仓库名字,格式：你的用户ID/仓库名称，如：blog/utterance_repo
   issue_term: 'title'            #映射配置
-  theme: 'icy-dark'          #主题
+  theme: 'github-light'          #主题可选主题有：github-light、github-dark、github-dark-orange、icy-dark、dark-blue、photon-dark
 
 # 样式定制 - 一般不需要修改，除非有很强的定制欲望…
 style:
