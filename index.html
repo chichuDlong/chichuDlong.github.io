@@ -55,6 +55,9 @@
 
 
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
+
+
+
     <div class="left-col" q-class="show:isShow">
       
 <div class="overlay" style="background: rgba(0,0,0,0)"></div>
@@ -100,8 +103,8 @@
             
 		</nav>
 		<nav>
-			<a>总文章数 4</a>
-			<a>总字数 <span class="post-count">491</span></a>
+			<a>总文章数 7</a>
+			<a>总字数 <span class="post-count">4.6k</span></a>
 		</nav>
 		<nav class="header-nav">
 			<div class="social">
@@ -235,23 +238,34 @@
         <!-- 开始添加字数统计-->
         
           <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <!--<img src="icon.png", width = "15px", height="15px">——添加标签并修改大小-->
-        <span class="post-meta-item-text"><img src="/assets/icon.png", width = "25px", height="25px"> 字数统计: </span>
-        <span class="post-count">88字</span>
-      </span>
-    </span>
+    <!--span class="post-time"-->
+      <!--span class="post-meta-item-icon"-->
+        <i class="icon-book" style="color:#000000;font-size:16px;"></i>
 
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text"><img src="/assets/shalou.jpg", width = "20px", height="30px"> 阅读时长≈ </span>
-        <span class="post-count">1分</span>
+        <!--添加标签并修改大小(实例如下):<img src="/assets/icon.png", width = "20px", height="20px">-->
+        <!--span class="post-meta-item-text"><img src="/assets/shalou.jpg", width = "15px", height="20px"> 阅读时长≈ </span>-->
+
+        <span class="post-meta-item-text" style="color:#000000;font-size:16px;"> 字数统计≈ </span>
+        <span class="post-count" style="color:#000000;font-size:16px;">178字</span>
+
+      <!--/span-->
+    <!--/span-->
+
+    &nbsp; | &nbsp;
+    <i class="icon-clock" style="color:#000080;font-size:16px;"></i>
+    <span class="post-meta-item-text" style="color:#000080;font-size:16px;"> 阅读时长≈ </span>
+    <span class="post-count" style="color:#000080;font-size:16px;">1分</span>
+
+
+
+    <!--显示单篇文章阅读次数-->
+    &nbsp; | &nbsp;
+      <span class="icon-smile" style="color:#f00000;font-size:16px;"></span>
+      <span id="busuanzi_container_page_pv" style="color:#f00000;font-size:16px;">
+          阅读数: <span id="busuanzi_value_page_pv" style="color:#f00000;font-size:16px;"></span>次
       </span>
-    </span>
+
+
 </div>
           
         <!-- 添加完成 -->
@@ -267,9 +281,12 @@
   
 </p></center> 取消中间的第二次标题显示，使用<center></center>可以使该内容居中 -->
       
-        <h2 id="欢迎大家来到我的博客，本博客主要与大家分享一些读书感悟，实用编程技术，比如C-C-、Python、网站搭建等的学习经验、方法、好玩的小例子，COMSOL软件的使用技巧与实用案例等等内容。具体博客内容的发布视具体情况而定。"><a href="#欢迎大家来到我的博客，本博客主要与大家分享一些读书感悟，实用编程技术，比如C-C-、Python、网站搭建等的学习经验、方法、好玩的小例子，COMSOL软件的使用技巧与实用案例等等内容。具体博客内容的发布视具体情况而定。" class="headerlink" title="欢迎大家来到我的博客，本博客主要与大家分享一些读书感悟，实用编程技术，比如C/C++、Python、网站搭建等的学习经验、方法、好玩的小例子，COMSOL软件的使用技巧与实用案例等等内容。具体博客内容的发布视具体情况而定。"></a>欢迎大家来到我的博客，本博客主要与大家分享一些读书感悟，实用编程技术，比如C/C++、Python、网站搭建等的学习经验、方法、好玩的小例子，COMSOL软件的使用技巧与实用案例等等内容。具体博客内容的发布视具体情况而定。</h2>
+        <p>欢迎有缘的朋友来到我的博客，我是一个名不见经传的小人物。</p>
+        
+          <a class="article-more-a" href="/2020/10/22/%E6%AC%A2%E8%BF%8E%E5%A4%A7%E5%AE%B6%E6%9D%A5%E5%88%B0%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/#more">more >></a>
+        
        
-<!-- 《添加版权声明 -->
+<!-- 添加版权声明 -->
 
   <!-- 《添加版权声明 -->
 <!--添加版权声明https://github.com/JoeyBling/hexo-theme-yilia-plus/commit/c1215e132f6d5621c5fea83d3c4f7ccbcca074a3-->
@@ -281,7 +298,7 @@
 
 <!-- 添加版权声明》 -->
 
-<!-- 添加版权声明》 -->   
+<!-- 添加版权声明 -->   
        
     </div>
     <div class="article-info article-info-index">
@@ -297,6 +314,495 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2020/10/22/%E6%AC%A2%E8%BF%8E%E5%A4%A7%E5%AE%B6%E6%9D%A5%E5%88%B0%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-pyplot绘图2" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/11/22/pyplot%E7%BB%98%E5%9B%BE2/">pyplot绘图2</a>
+    </h1>
+  
+
+        
+        
+<a href="/2020/11/22/pyplot%E7%BB%98%E5%9B%BE2/" class="archive-article-date">
+  	<time datetime="2020-11-22T13:13:50.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-22</time>
+</a>
+        <!-- 需要添加的位置 -->
+        <!-- 开始添加字数统计-->
+        
+          <div style="margin-top:10px;">
+    <!--span class="post-time"-->
+      <!--span class="post-meta-item-icon"-->
+        <i class="icon-book" style="color:#000000;font-size:16px;"></i>
+
+        <!--添加标签并修改大小(实例如下):<img src="/assets/icon.png", width = "20px", height="20px">-->
+        <!--span class="post-meta-item-text"><img src="/assets/shalou.jpg", width = "15px", height="20px"> 阅读时长≈ </span>-->
+
+        <span class="post-meta-item-text" style="color:#000000;font-size:16px;"> 字数统计≈ </span>
+        <span class="post-count" style="color:#000000;font-size:16px;">2.5k字</span>
+
+      <!--/span-->
+    <!--/span-->
+
+    &nbsp; | &nbsp;
+    <i class="icon-clock" style="color:#000080;font-size:16px;"></i>
+    <span class="post-meta-item-text" style="color:#000080;font-size:16px;"> 阅读时长≈ </span>
+    <span class="post-count" style="color:#000080;font-size:16px;">11分</span>
+
+
+
+    <!--显示单篇文章阅读次数-->
+    &nbsp; | &nbsp;
+      <span class="icon-smile" style="color:#f00000;font-size:16px;"></span>
+      <span id="busuanzi_container_page_pv" style="color:#f00000;font-size:16px;">
+          阅读数: <span id="busuanzi_value_page_pv" style="color:#f00000;font-size:16px;"></span>次
+      </span>
+
+
+</div>
+          
+        <!-- 添加完成 -->
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      <!--<center><p>
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/11/22/pyplot%E7%BB%98%E5%9B%BE2/">pyplot绘图2</a>
+    </h1>
+  
+</p></center> 取消中间的第二次标题显示，使用<center></center>可以使该内容居中 -->
+      
+        <h2 id="Python读取文本文件-以“-CSV”文件为例"><a href="#Python读取文本文件-以“-CSV”文件为例" class="headerlink" title="Python读取文本文件(以“.CSV”文件为例)"></a><strong><em>Python读取文本文件(以“.CSV”文件为例)</em></strong></h2><p>&emsp;使用Python读写文件是非常方便的，掌握Python读写文件的方法之后，对办公效率将有非常大的提升，尤其是面对庞大的数据处理工作时，使用Python更加显得便捷。本文是基于上一文pyplot绘制曲线-1进行的，新的内容增加了对常见文本文件的读取功能，以及多曲线绘制的一些内容。</p>
+<hr>
+<h2 id="什么是CSV文件？"><a href="#什么是CSV文件？" class="headerlink" title="什么是CSV文件？"></a><strong><em>什么是CSV文件？</em></strong></h2><p>&emsp;在进行文件读取之前我们首先要知道什么是“*.CSV”文件，这样的文件从何而来？CSV（Comma Separated Values file）文件，即逗号分隔文件，是一种纯文本文件，它使用特定的结构来排列表格数据。因为是纯文本文件，所以CSV只包含实际的文本数据——也就是说CSV可以包含可打印的ASCII或者Unicode字符。</p>
+<p>CSV文件的结构由其名称给出。通常CSV文件使用逗号分隔每个特定的数据值，下面是该结构的样子：<br>column_1_name,    colum_2 name,     colum_3 name<br>first_row_data_1, first_row_data_2, first_row_data_3<br>second_row_data_1, second_row_data_2, second_row_data_3  </p>
+<p>注意每个数据使用逗号分隔。通常，第一行标识每一条数据——也就是各列数据的名称。之后的每一行数据都是实际的数据，并且仅受文件大小的限制。</p>
+<p>逗号并不是唯一的分隔符。其他流行的分隔符包括制表符（\t）、冒号（:）和分号（；）。正确解析CSV文件需要我们知道正在使用的分隔符。</p>
+<hr>
+<h2 id="CSV文件从哪里来？"><a href="#CSV文件从哪里来？" class="headerlink" title="CSV文件从哪里来？"></a><strong><em>CSV文件从哪里来？</em></strong></h2><p>&emsp;CSV文件通常由处理大量数据的文件创建。CSV是从电子表格和数据库导出数据以及在其他程序中导入或使用数据的便捷方式。例如，可以将数据挖掘程序的结果导出到CSV文件，然后将其导入电子表格以分析数据，生成演示文稿或者准备报告以供发布。</p>
+<p>CSV文件非常易于编程方式工作，任何支持文本文件输入和字符串操作的语言（如Python）都可以直接使用CSV文件。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">import csv</span><br><span class="line"></span><br><span class="line">with open(&#39;employee_birthday.txt&#39;) as csv_file:</span><br><span class="line">    csv_reader &#x3D; csv.reader(csv_file, delimiter&#x3D;&#39;,&#39;)</span><br><span class="line">    line_count &#x3D; 0</span><br><span class="line">    for row in csv_reader:</span><br><span class="line">        if line_count &#x3D;&#x3D; 0:</span><br><span class="line">            print(f&#39;Column names are &#123;&quot;, &quot;.join(row)&#125;&#39;)</span><br><span class="line">            line_count +&#x3D; 1</span><br><span class="line">        else:</span><br><span class="line">            print(f&#39;\t&#123;row[0]&#125; works in the &#123;row[1]&#125; department, and was born in &#123;row[2]&#125;.&#39;)</span><br><span class="line">            line_count +&#x3D; 1</span><br><span class="line">    print(f&#39;Processed &#123;line_count&#125; lines.&#39;)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>reader 对象的可选的参数<br>reader对象可以通过指定附加参数，处理不同风格的 CSV 文件，其中一些如下所示：</p>
+<blockquote>
+<p>delimiter指定用于分隔每个字段的字符，默认值为逗号（,）。<br>quotechar指定用于包围包含分隔符字符的字段的字符，默认值为双引号（”）。<br>escapechar指定用于转义分隔符的字符，以防引号未使用。默认值为无转义字符。</p>
+</blockquote>
+</blockquote>
+<hr>
+<h2 id="文件读取实例演示"><a href="#文件读取实例演示" class="headerlink" title="文件读取实例演示"></a><strong><em>文件读取实例演示</em></strong></h2><p>&emsp;下面我们通过一个具体的例子对该类型文件信息的读取进行演示。文件数据如下：</p>
+<p><img src="/pyplot%E7%BB%98%E5%9B%BE2/test_data.jpg"></p>
+<hr>
+<h2 id="文件操作过程"><a href="#文件操作过程" class="headerlink" title="文件操作过程"></a><strong><em>文件操作过程</em></strong></h2><p>&emsp;接下来我们以上述文件的读取，数据后处理为例进行说明。</p>
+<blockquote>
+<p>1.导入“*.CSV”文件数据并转换为列表输出信息</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"># 导入csv文件库</span><br><span class="line">import csv</span><br><span class="line"># 读取文件信息至read对象中,&quot;gbk&quot;为文件编码方式</span><br><span class="line">read &#x3D; csv.reader(open(&#39;results0.csv&#39;, &#39;r&#39;, encoding&#x3D;&#39;gbk&#39;))</span><br><span class="line"> </span><br><span class="line">print(type(read), &#39;读取的信息:&#39;, read)</span><br><span class="line"> </span><br><span class="line">print(&#39;\n对读取的信息进行输出：&#39;)</span><br><span class="line">&#39;&#39;&#39;</span><br><span class="line">将其转换为列表之后进行整体信息输出，如果使用read形式对读取的信息进行输出，</span><br><span class="line">则会导致后续的操作无法回到文件开头，类似指针指向了文件末尾，如何指向开头</span><br><span class="line">有待学习。</span><br><span class="line">for row in read:</span><br><span class="line">  print(row)</span><br><span class="line">&#39;&#39;&#39;</span><br><span class="line"># 将读取的数据转换为列表方便后续对行、列进行保存、操作、绘图</span><br><span class="line">test &#x3D; list(read)</span><br><span class="line">print(&#39;保存为列表之后的输出&#39;)</span><br><span class="line">for row in test:</span><br><span class="line">   print(row)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<blockquote>
+<p>输出结果如下：<br><img src="/pyplot%E7%BB%98%E5%9B%BE2/output.jpg"></p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>2.数据转换为列表之后，数据（除了第一列数据的名称）可以简单的分为行、列，我们可以根据需要对行、列数据进行利用（这里仅进行了输出显示）。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">print(&#39;\n测试某一行&#39;)</span><br><span class="line">print(type(test[0]), test[0])</span><br><span class="line"></span><br><span class="line">print(&#39;\n某一列&#39;)</span><br><span class="line">print(&#39;第一列\t第二列&#39;)</span><br><span class="line">for i in test:</span><br><span class="line">    print(i[0]+&#39;\t&#39;+i[1])</span><br><span class="line">    print(type(test[0][0]))</span><br></pre></td></tr></table></figure>
+<blockquote>
+<blockquote>
+<p>行、列测试结果如下：<br><img src="/pyplot%E7%BB%98%E5%9B%BE2/column_and_row.jpg"></p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>3.使用Python读取文件信息后数据均保存为字符串类型，如果要使用其进行绘图，就需要将其转换为数字，根据需要本例中转换为小数。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">print(&#39;\n\n数据类型转换&#39;)</span><br><span class="line">&#39;&#39;&#39;</span><br><span class="line">将除了标题之外的所有数字转为float类型，则有x&#x3D; data[0]，phi&#x3D;data[1]</span><br><span class="line">rho&#x3D;data[2]，ef&#x3D;data[3]</span><br><span class="line">&#39;&#39;&#39;</span><br><span class="line">data &#x3D; [[float(c) for c in r] for r in test[1:]]</span><br><span class="line">print(&#39;x轴\t\tphi\t\trho\t\tef&#39;)</span><br><span class="line">for m in data:</span><br><span class="line">     print(m[0], &#39;\t&#39;, m[1], &#39;\t&#39;, m[2], &#39;\t&#39;, m[3])</span><br></pre></td></tr></table></figure>
+<blockquote>
+<blockquote>
+<p>数据类型转换后如下：<br><img src="/pyplot%E7%BB%98%E5%9B%BE2/type_change.jpg"></p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p>4.利用所读取的数据进行绘图，为了方便利用表中数据，这里使用了一个数据处理库“nump”，该库可以很方便地将数据进行类似矩阵的转换，这样我们在使用数据进行绘图时可以方便的将列转换为行进行绘图，随后的绘图与pyplot绘图-1类似。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">import matplotlib.pyplot as pl</span><br><span class="line"># 导入数据处理库，目前用到的仅是将其进行矩阵类似的转置</span><br><span class="line">import numpy as np</span><br><span class="line"># 导入字体管理文件</span><br><span class="line">from matplotlib import font_manager</span><br><span class="line">my_font &#x3D; font_manager.FontProperties(fname &#x3D; &quot;C:&#x2F;WINDOWS&#x2F;Fonts&#x2F;simhei.ttf&quot;)</span><br><span class="line">import warnings</span><br><span class="line">import matplotlib.cbook</span><br><span class="line">warnings.filterwarnings(&quot;ignore&quot;, category&#x3D;matplotlib.cbook.mplDeprecation)</span><br><span class="line"></span><br><span class="line">print(&#39;未转换——x轴：\n&#39;, data[0])</span><br><span class="line"># 将上述获得的数据进行转置获得列上的数据</span><br><span class="line">data &#x3D; np.transpose(np.array(data))</span><br><span class="line">print(&#39;转换之后——x轴：\n&#39;, data[0])</span><br><span class="line">   </span><br><span class="line"># 绘制子图</span><br><span class="line">fig, ax1 &#x3D; pl.subplots(figsize&#x3D;(10, 7))</span><br><span class="line"></span><br><span class="line"># 两个子图共享一个画布，和横轴</span><br><span class="line">ax2 &#x3D; ax1.twinx()</span><br><span class="line"></span><br><span class="line">   </span><br><span class="line">#改变tick方向大小颜色等等</span><br><span class="line">ax1.tick_params(&quot;y&quot;, which&#x3D;&#39;major&#39;, length&#x3D;15, width&#x3D;2.0, colors&#x3D;&#39;r&#39;, direction&#x3D;&#39;in&#39;) #&quot;y&quot;, &#39;x&#39;, &#39;both&#39;</span><br><span class="line">ax2.tick_params(&#39;both&#39;, which &#x3D;&#39;major&#39;, length&#x3D;5, width&#x3D;1.0, labelsize&#x3D;10, labelcolor&#x3D;&#39;0.6&#39;, direction&#x3D;&#39;in&#39;)</span><br><span class="line">ax1.tick_params(&#39;x&#39;, which &#x3D;&#39;major&#39;, direction&#x3D;&#39;in&#39;)</span><br><span class="line"></span><br><span class="line"># 绘图</span><br><span class="line">ax1.plot(data[0], data[1], &#39;o-b&#39;, label&#x3D;&#39;phi&#39;, lw&#x3D;2, ms&#x3D;10)</span><br><span class="line">ax2.plot(data[0], data[3], &#39;&lt;--g&#39;, label&#x3D;&#39;ef&#39;, lw&#x3D;3, ms&#x3D;12)</span><br><span class="line"> </span><br><span class="line"># 添加标题</span><br><span class="line">ax1.set_title(&#39;Potential&#39;, fontsize&#x3D;20)</span><br><span class="line">ax1.set_xlabel(&#39;x 轴(m)&#39;, fontproperties&#x3D;my_font, fontsize&#x3D;20)</span><br><span class="line">ax1.set_ylabel(&#39;电势&#x2F;phi (V)&#39;, fontproperties&#x3D;my_font, fontsize&#x3D;20)</span><br><span class="line">ax2.set_ylabel(&#39;rho (C&#x2F;m^3)&#39;, color&#x3D;&#39;red&#39;, fontsize&#x3D;20)</span><br><span class="line"></span><br><span class="line"># 显示图例</span><br><span class="line">ax1.legend(&#39;0&#39;)</span><br><span class="line">ax2.legend(&#39;0&#39;)</span><br><span class="line">pl.savefig(&#39;test.png&#39;, dpi&#x3D;600)</span><br><span class="line">#ax3.plot(data[0], data[2])</span><br><span class="line">pl.show()</span><br></pre></td></tr></table></figure>
+<blockquote>
+<blockquote>
+<p>绘图结果如下：<br><img src="/pyplot%E7%BB%98%E5%9B%BE2/result.jpg"></p>
+</blockquote>
+</blockquote>
+<hr>
+<h2 id="上述实例中完整代码如下"><a href="#上述实例中完整代码如下" class="headerlink" title="上述实例中完整代码如下"></a><strong><em>上述实例中完整代码如下</em></strong></h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br></pre></td><td class="code"><pre><span class="line"># 导入csv文件库</span><br><span class="line">import csv</span><br><span class="line"># 读取文件信息至read对象中</span><br><span class="line">read &#x3D; csv.reader(open(&#39;results0.csv&#39;, &#39;r&#39;, encoding&#x3D;&#39;gbk&#39;))</span><br><span class="line"> </span><br><span class="line">print(type(read), &#39;读取的信息:&#39;, read)</span><br><span class="line"> </span><br><span class="line">print(&#39;\n对读取的信息进行输出：&#39;)</span><br><span class="line">&#39;&#39;&#39;</span><br><span class="line">将其转换为列表之后进行整体信息输出，如果使用read形式对读取的信息进行输出，</span><br><span class="line">则会导致后续的操作无法回到文件开头，类似指针指向了文件末尾，如何指向开头</span><br><span class="line">有待学习。</span><br><span class="line">for row in read:</span><br><span class="line">  print(row)</span><br><span class="line">&#39;&#39;&#39;</span><br><span class="line"># 将读取的数据转换为列表方便后续对行、列进行保存、操作、绘图</span><br><span class="line">test &#x3D; list(read)</span><br><span class="line">print(&#39;保存为列表之后的输出&#39;)</span><br><span class="line">for row in test:</span><br><span class="line">   print(row)</span><br><span class="line"></span><br><span class="line">print(&#39;\n测试某一行&#39;)</span><br><span class="line">print(type(test[0]), test[0])</span><br><span class="line"></span><br><span class="line">print(&#39;\n某一列&#39;)</span><br><span class="line">print(&#39;第一列\t第二列&#39;)</span><br><span class="line">for i in test:</span><br><span class="line">    print(i[0]+&#39;\t&#39;+i[1])</span><br><span class="line">    print(type(test[0][0]))</span><br><span class="line"> </span><br><span class="line">print(&#39;\n\n数据类型转换&#39;)</span><br><span class="line">&#39;&#39;&#39;</span><br><span class="line">将除了标题之外的所有数字转为float类型，则有x&#x3D; data[0]，phi&#x3D;data[1]</span><br><span class="line">rho&#x3D;data[2]，ef&#x3D;data[3]</span><br><span class="line">&#39;&#39;&#39;</span><br><span class="line">data &#x3D; [[float(c) for c in r] for r in test[1:]]</span><br><span class="line">print(&#39;x轴\t\tphi\t\trho\t\tef&#39;)</span><br><span class="line">for m in data:</span><br><span class="line">     print(m[0], &#39;\t&#39;, m[1], &#39;\t&#39;, m[2], &#39;\t&#39;, m[3])</span><br><span class="line"> </span><br><span class="line">import matplotlib.pyplot as pl</span><br><span class="line"># 导入数据处理库，目前用到的仅是将其进行矩阵类似的转置</span><br><span class="line">import numpy as np</span><br><span class="line"># 导入字体管理文件</span><br><span class="line">from matplotlib import font_manager</span><br><span class="line">my_font &#x3D; font_manager.FontProperties(fname &#x3D; &quot;C:&#x2F;WINDOWS&#x2F;Fonts&#x2F;simhei.ttf&quot;)</span><br><span class="line">import warnings</span><br><span class="line">import matplotlib.cbook</span><br><span class="line">warnings.filterwarnings(&quot;ignore&quot;, category&#x3D;matplotlib.cbook.mplDeprecation)</span><br><span class="line"></span><br><span class="line">print(&#39;未转换——x轴：\n&#39;, data[0])</span><br><span class="line"># 将上述获得的数据进行转置获得列上的数据</span><br><span class="line">data &#x3D; np.transpose(np.array(data))</span><br><span class="line">print(&#39;转换之后——x轴：\n&#39;, data[0])</span><br><span class="line">   </span><br><span class="line"># 绘制子图</span><br><span class="line">fig, ax1 &#x3D; pl.subplots(figsize&#x3D;(10, 7))</span><br><span class="line"></span><br><span class="line"># 两个子图共享一个画布，和横轴</span><br><span class="line">ax2 &#x3D; ax1.twinx()</span><br><span class="line"></span><br><span class="line">   </span><br><span class="line">#改变tick方向大小颜色等等</span><br><span class="line">ax1.tick_params(&quot;y&quot;, which&#x3D;&#39;major&#39;, length&#x3D;15, width&#x3D;2.0, colors&#x3D;&#39;r&#39;, direction&#x3D;&#39;in&#39;) #&quot;y&quot;, &#39;x&#39;, &#39;both&#39;</span><br><span class="line">ax2.tick_params(&#39;both&#39;, which &#x3D;&#39;major&#39;, length&#x3D;5, width&#x3D;1.0, labelsize&#x3D;10, labelcolor&#x3D;&#39;0.6&#39;, direction&#x3D;&#39;in&#39;)</span><br><span class="line">ax1.tick_params(&#39;x&#39;, which &#x3D;&#39;major&#39;, direction&#x3D;&#39;in&#39;)</span><br><span class="line"></span><br><span class="line"># 绘图</span><br><span class="line">ax1.plot(data[0], data[1], &#39;o-b&#39;, label&#x3D;&#39;phi&#39;, lw&#x3D;2, ms&#x3D;10)</span><br><span class="line">ax2.plot(data[0], data[3], &#39;&lt;--g&#39;, label&#x3D;&#39;ef&#39;, lw&#x3D;3, ms&#x3D;12)</span><br><span class="line"> </span><br><span class="line"># 添加标题</span><br><span class="line">ax1.set_title(&#39;Potential&#39;, fontsize&#x3D;20)</span><br><span class="line">ax1.set_xlabel(&#39;x 轴(m)&#39;, fontproperties&#x3D;my_font, fontsize&#x3D;20)</span><br><span class="line">ax1.set_ylabel(&#39;电势&#x2F;phi (V)&#39;, fontproperties&#x3D;my_font, fontsize&#x3D;20)</span><br><span class="line">ax2.set_ylabel(&#39;rho (C&#x2F;m^3)&#39;, color&#x3D;&#39;red&#39;, fontsize&#x3D;20)</span><br><span class="line"></span><br><span class="line"># 显示图例</span><br><span class="line">ax1.legend(&#39;0&#39;)</span><br><span class="line">ax2.legend(&#39;0&#39;)</span><br><span class="line">pl.savefig(&#39;test.png&#39;, dpi&#x3D;600)</span><br><span class="line">#ax3.plot(data[0], data[2])</span><br><span class="line">pl.show()</span><br></pre></td></tr></table></figure>
+       
+<!-- 添加版权声明 -->
+
+  <!-- 《添加版权声明 -->
+<!--添加版权声明https://github.com/JoeyBling/hexo-theme-yilia-plus/commit/c1215e132f6d5621c5fea83d3c4f7ccbcca074a3-->
+
+
+<!-- #版权基础设定：0-关闭声明； 1-文章对应的md文件里有declare: true属性，才有版权声明； 2-所有文章均有版权声明 -->
+
+  <div class="declare" hidden="hidden"></div>
+
+<!-- 添加版权声明》 -->
+
+<!-- 添加版权声明 -->   
+       
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">pyplot绘制曲线-2</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/Python//" class="article-tag-list-link color2">Python</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/11/22/pyplot%E7%BB%98%E5%9B%BE2/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-pyplot绘图" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/11/18/pyplot%E7%BB%98%E5%9B%BE/">pyplot绘图</a>
+    </h1>
+  
+
+        
+        
+<a href="/2020/11/18/pyplot%E7%BB%98%E5%9B%BE/" class="archive-article-date">
+  	<time datetime="2020-11-18T07:41:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-18</time>
+</a>
+        <!-- 需要添加的位置 -->
+        <!-- 开始添加字数统计-->
+        
+          <div style="margin-top:10px;">
+    <!--span class="post-time"-->
+      <!--span class="post-meta-item-icon"-->
+        <i class="icon-book" style="color:#000000;font-size:16px;"></i>
+
+        <!--添加标签并修改大小(实例如下):<img src="/assets/icon.png", width = "20px", height="20px">-->
+        <!--span class="post-meta-item-text"><img src="/assets/shalou.jpg", width = "15px", height="20px"> 阅读时长≈ </span>-->
+
+        <span class="post-meta-item-text" style="color:#000000;font-size:16px;"> 字数统计≈ </span>
+        <span class="post-count" style="color:#000000;font-size:16px;">1.4k字</span>
+
+      <!--/span-->
+    <!--/span-->
+
+    &nbsp; | &nbsp;
+    <i class="icon-clock" style="color:#000080;font-size:16px;"></i>
+    <span class="post-meta-item-text" style="color:#000080;font-size:16px;"> 阅读时长≈ </span>
+    <span class="post-count" style="color:#000080;font-size:16px;">5分</span>
+
+
+
+    <!--显示单篇文章阅读次数-->
+    &nbsp; | &nbsp;
+      <span class="icon-smile" style="color:#f00000;font-size:16px;"></span>
+      <span id="busuanzi_container_page_pv" style="color:#f00000;font-size:16px;">
+          阅读数: <span id="busuanzi_value_page_pv" style="color:#f00000;font-size:16px;"></span>次
+      </span>
+
+
+</div>
+          
+        <!-- 添加完成 -->
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      <!--<center><p>
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/11/18/pyplot%E7%BB%98%E5%9B%BE/">pyplot绘图</a>
+    </h1>
+  
+</p></center> 取消中间的第二次标题显示，使用<center></center>可以使该内容居中 -->
+      
+        <h1 id="matplotlib-pyplot简介"><a href="#matplotlib-pyplot简介" class="headerlink" title="matplotlib.pyplot简介"></a><strong><em>matplotlib.pyplot简介</em></strong></h1><p>&emsp;matplotlib的pyplot子库提供了和matlab类似的绘图API，方便我们进行快速绘制2D图表。matplotlib.pyplot是命令行式函数的集合，每一个函数都对图像作了修改，比如创建图形，在图像上创建画图区域，在画图区域上画线，在线上标注等等。使用该工具还可以对文件中数据进行方便地绘制，提高工作效率。本系列博客主要针对常用的线图、点图、云图等一些常用的操作进行较为详细地介绍与讲解。</p>
+        
+          <a class="article-more-a" href="/2020/11/18/pyplot%E7%BB%98%E5%9B%BE/#more">more >></a>
+        
+       
+<!-- 添加版权声明 -->
+
+  <!-- 《添加版权声明 -->
+<!--添加版权声明https://github.com/JoeyBling/hexo-theme-yilia-plus/commit/c1215e132f6d5621c5fea83d3c4f7ccbcca074a3-->
+
+
+<!-- #版权基础设定：0-关闭声明； 1-文章对应的md文件里有declare: true属性，才有版权声明； 2-所有文章均有版权声明 -->
+
+  <div class="declare" hidden="hidden"></div>
+
+<!-- 添加版权声明》 -->
+
+<!-- 添加版权声明 -->   
+       
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">pyplot绘制曲线-1</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/Python//" class="article-tag-list-link color2">Python</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/11/18/pyplot%E7%BB%98%E5%9B%BE/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-Self-Introduction" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/11/10/Self-Introduction/">Self-Introduction</a>
+    </h1>
+  
+
+        
+        
+<a href="/2020/11/10/Self-Introduction/" class="archive-article-date">
+  	<time datetime="2020-11-10T12:04:41.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-11-10</time>
+</a>
+        <!-- 需要添加的位置 -->
+        <!-- 开始添加字数统计-->
+        
+          <div style="margin-top:10px;">
+    <!--span class="post-time"-->
+      <!--span class="post-meta-item-icon"-->
+        <i class="icon-book" style="color:#000000;font-size:16px;"></i>
+
+        <!--添加标签并修改大小(实例如下):<img src="/assets/icon.png", width = "20px", height="20px">-->
+        <!--span class="post-meta-item-text"><img src="/assets/shalou.jpg", width = "15px", height="20px"> 阅读时长≈ </span>-->
+
+        <span class="post-meta-item-text" style="color:#000000;font-size:16px;"> 字数统计≈ </span>
+        <span class="post-count" style="color:#000000;font-size:16px;">90字</span>
+
+      <!--/span-->
+    <!--/span-->
+
+    &nbsp; | &nbsp;
+    <i class="icon-clock" style="color:#000080;font-size:16px;"></i>
+    <span class="post-meta-item-text" style="color:#000080;font-size:16px;"> 阅读时长≈ </span>
+    <span class="post-count" style="color:#000080;font-size:16px;">1分</span>
+
+
+
+    <!--显示单篇文章阅读次数-->
+    &nbsp; | &nbsp;
+      <span class="icon-smile" style="color:#f00000;font-size:16px;"></span>
+      <span id="busuanzi_container_page_pv" style="color:#f00000;font-size:16px;">
+          阅读数: <span id="busuanzi_value_page_pv" style="color:#f00000;font-size:16px;"></span>次
+      </span>
+
+
+</div>
+          
+        <!-- 添加完成 -->
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      <!--<center><p>
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/11/10/Self-Introduction/">Self-Introduction</a>
+    </h1>
+  
+</p></center> 取消中间的第二次标题显示，使用<center></center>可以使该内容居中 -->
+      
+        <hr>
+<h2 id="Basic-Information"><a href="#Basic-Information" class="headerlink" title="Basic Information:"></a><strong><em>Basic Information:</em></strong></h2><blockquote>
+<blockquote>
+<h3 id="Name-Junjun-Zhang-张军军"><a href="#Name-Junjun-Zhang-张军军" class="headerlink" title="Name: Junjun Zhang(张军军)"></a>Name: Junjun Zhang(张军军)</h3><h3 id="Date-of-birth-08-08-1994"><a href="#Date-of-birth-08-08-1994" class="headerlink" title="Date of birth: 08/08/1994"></a>Date of birth: 08/08/1994</h3><h3 id="Place-of-birth-Taiyuan-ShanXi"><a href="#Place-of-birth-Taiyuan-ShanXi" class="headerlink" title="Place of birth: Taiyuan, ShanXi"></a>Place of birth: Taiyuan, ShanXi</h3><h3 id="E-mail-x31-49-x36-50-x32-x38-x38-48-53-x39-x40-x71-113-46-x63-111-x6d"><a href="#E-mail-x31-49-x36-50-x32-x38-x38-48-53-x39-x40-x71-113-46-x63-111-x6d" class="headerlink" title="E-mail: &#x31;&#49;&#x36;&#50;&#x32;&#x38;&#x38;&#48;&#53;&#x39;&#x40;&#x71;&#113;&#46;&#x63;&#111;&#x6d;"></a>E-mail: <a href="mailto:&#x31;&#49;&#x36;&#50;&#x32;&#x38;&#x38;&#48;&#53;&#x39;&#x40;&#x71;&#113;&#46;&#x63;&#111;&#x6d;">&#x31;&#49;&#x36;&#50;&#x32;&#x38;&#x38;&#48;&#53;&#x39;&#x40;&#x71;&#113;&#46;&#x63;&#111;&#x6d;</a></h3></blockquote>
+</blockquote>
+        
+          <a class="article-more-a" href="/2020/11/10/Self-Introduction/#more">more >></a>
+        
+       
+<!-- 添加版权声明 -->
+
+  <!-- 《添加版权声明 -->
+<!--添加版权声明https://github.com/JoeyBling/hexo-theme-yilia-plus/commit/c1215e132f6d5621c5fea83d3c4f7ccbcca074a3-->
+
+
+<!-- #版权基础设定：0-关闭声明； 1-文章对应的md文件里有declare: true属性，才有版权声明； 2-所有文章均有版权声明 -->
+
+  <div class="declare" hidden="hidden"></div>
+
+<!-- 添加版权声明》 -->
+
+<!-- 添加版权声明 -->   
+       
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">self-introduction</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/English//" class="article-tag-list-link color3">English</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2020/11/10/Self-Introduction/">展开全文 >></a>
         </p>
       
 
@@ -347,23 +853,34 @@
         <!-- 开始添加字数统计-->
         
           <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <!--<img src="icon.png", width = "15px", height="15px">——添加标签并修改大小-->
-        <span class="post-meta-item-text"><img src="/assets/icon.png", width = "25px", height="25px"> 字数统计: </span>
-        <span class="post-count">76字</span>
-      </span>
-    </span>
+    <!--span class="post-time"-->
+      <!--span class="post-meta-item-icon"-->
+        <i class="icon-book" style="color:#000000;font-size:16px;"></i>
 
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text"><img src="/assets/shalou.jpg", width = "20px", height="30px"> 阅读时长≈ </span>
-        <span class="post-count">1分</span>
+        <!--添加标签并修改大小(实例如下):<img src="/assets/icon.png", width = "20px", height="20px">-->
+        <!--span class="post-meta-item-text"><img src="/assets/shalou.jpg", width = "15px", height="20px"> 阅读时长≈ </span>-->
+
+        <span class="post-meta-item-text" style="color:#000000;font-size:16px;"> 字数统计≈ </span>
+        <span class="post-count" style="color:#000000;font-size:16px;">76字</span>
+
+      <!--/span-->
+    <!--/span-->
+
+    &nbsp; | &nbsp;
+    <i class="icon-clock" style="color:#000080;font-size:16px;"></i>
+    <span class="post-meta-item-text" style="color:#000080;font-size:16px;"> 阅读时长≈ </span>
+    <span class="post-count" style="color:#000080;font-size:16px;">1分</span>
+
+
+
+    <!--显示单篇文章阅读次数-->
+    &nbsp; | &nbsp;
+      <span class="icon-smile" style="color:#f00000;font-size:16px;"></span>
+      <span id="busuanzi_container_page_pv" style="color:#f00000;font-size:16px;">
+          阅读数: <span id="busuanzi_value_page_pv" style="color:#f00000;font-size:16px;"></span>次
       </span>
-    </span>
+
+
 </div>
           
         <!-- 添加完成 -->
@@ -385,7 +902,7 @@
           <a class="article-more-a" href="/2020/10/13/hello-world/#more">more >></a>
         
        
-<!-- 《添加版权声明 -->
+<!-- 添加版权声明 -->
 
   <!-- 《添加版权声明 -->
 <!--添加版权声明https://github.com/JoeyBling/hexo-theme-yilia-plus/commit/c1215e132f6d5621c5fea83d3c4f7ccbcca074a3-->
@@ -397,7 +914,7 @@
 
 <!-- 添加版权声明》 -->
 
-<!-- 添加版权声明》 -->   
+<!-- 添加版权声明 -->   
        
     </div>
     <div class="article-info article-info-index">
@@ -469,23 +986,34 @@
         <!-- 开始添加字数统计-->
         
           <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <!--<img src="icon.png", width = "15px", height="15px">——添加标签并修改大小-->
-        <span class="post-meta-item-text"><img src="/assets/icon.png", width = "25px", height="25px"> 字数统计: </span>
-        <span class="post-count">6字</span>
-      </span>
-    </span>
+    <!--span class="post-time"-->
+      <!--span class="post-meta-item-icon"-->
+        <i class="icon-book" style="color:#000000;font-size:16px;"></i>
 
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text"><img src="/assets/shalou.jpg", width = "20px", height="30px"> 阅读时长≈ </span>
-        <span class="post-count">1分</span>
+        <!--添加标签并修改大小(实例如下):<img src="/assets/icon.png", width = "20px", height="20px">-->
+        <!--span class="post-meta-item-text"><img src="/assets/shalou.jpg", width = "15px", height="20px"> 阅读时长≈ </span>-->
+
+        <span class="post-meta-item-text" style="color:#000000;font-size:16px;"> 字数统计≈ </span>
+        <span class="post-count" style="color:#000000;font-size:16px;">6字</span>
+
+      <!--/span-->
+    <!--/span-->
+
+    &nbsp; | &nbsp;
+    <i class="icon-clock" style="color:#000080;font-size:16px;"></i>
+    <span class="post-meta-item-text" style="color:#000080;font-size:16px;"> 阅读时长≈ </span>
+    <span class="post-count" style="color:#000080;font-size:16px;">1分</span>
+
+
+
+    <!--显示单篇文章阅读次数-->
+    &nbsp; | &nbsp;
+      <span class="icon-smile" style="color:#f00000;font-size:16px;"></span>
+      <span id="busuanzi_container_page_pv" style="color:#f00000;font-size:16px;">
+          阅读数: <span id="busuanzi_value_page_pv" style="color:#f00000;font-size:16px;"></span>次
       </span>
-    </span>
+
+
 </div>
           
         <!-- 添加完成 -->
@@ -506,7 +1034,7 @@
           <a class="article-more-a" href="/2020/10/13/%E8%8E%AB%E7%94%9F%E6%B0%94/#more">more >></a>
         
        
-<!-- 《添加版权声明 -->
+<!-- 添加版权声明 -->
 
   <!-- 《添加版权声明 -->
 <!--添加版权声明https://github.com/JoeyBling/hexo-theme-yilia-plus/commit/c1215e132f6d5621c5fea83d3c4f7ccbcca074a3-->
@@ -518,7 +1046,7 @@
 
 <!-- 添加版权声明》 -->
 
-<!-- 添加版权声明》 -->   
+<!-- 添加版权声明 -->   
        
     </div>
     <div class="article-info article-info-index">
@@ -579,23 +1107,34 @@
         <!-- 开始添加字数统计-->
         
           <div style="margin-top:10px;">
-    <span class="post-time">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-keyboard-o"></i>
-        <!--<img src="icon.png", width = "15px", height="15px">——添加标签并修改大小-->
-        <span class="post-meta-item-text"><img src="/assets/icon.png", width = "25px", height="25px"> 字数统计: </span>
-        <span class="post-count">321字</span>
-      </span>
-    </span>
+    <!--span class="post-time"-->
+      <!--span class="post-meta-item-icon"-->
+        <i class="icon-book" style="color:#000000;font-size:16px;"></i>
 
-    <span class="post-time">
-      &nbsp; | &nbsp;
-      <span class="post-meta-item-icon">
-        <i class="fa fa-hourglass-half"></i>
-        <span class="post-meta-item-text"><img src="/assets/shalou.jpg", width = "20px", height="30px"> 阅读时长≈ </span>
-        <span class="post-count">1分</span>
+        <!--添加标签并修改大小(实例如下):<img src="/assets/icon.png", width = "20px", height="20px">-->
+        <!--span class="post-meta-item-text"><img src="/assets/shalou.jpg", width = "15px", height="20px"> 阅读时长≈ </span>-->
+
+        <span class="post-meta-item-text" style="color:#000000;font-size:16px;"> 字数统计≈ </span>
+        <span class="post-count" style="color:#000000;font-size:16px;">321字</span>
+
+      <!--/span-->
+    <!--/span-->
+
+    &nbsp; | &nbsp;
+    <i class="icon-clock" style="color:#000080;font-size:16px;"></i>
+    <span class="post-meta-item-text" style="color:#000080;font-size:16px;"> 阅读时长≈ </span>
+    <span class="post-count" style="color:#000080;font-size:16px;">1分</span>
+
+
+
+    <!--显示单篇文章阅读次数-->
+    &nbsp; | &nbsp;
+      <span class="icon-smile" style="color:#f00000;font-size:16px;"></span>
+      <span id="busuanzi_container_page_pv" style="color:#f00000;font-size:16px;">
+          阅读数: <span id="busuanzi_value_page_pv" style="color:#f00000;font-size:16px;"></span>次
       </span>
-    </span>
+
+
 </div>
           
         <!-- 添加完成 -->
@@ -616,7 +1155,7 @@
           <a class="article-more-a" href="/2020/10/13/MarkDown%E6%96%87%E7%AB%A0%E5%86%99%E4%BD%9C%E8%A7%84%E8%8C%83/#more">more >></a>
         
        
-<!-- 《添加版权声明 -->
+<!-- 添加版权声明 -->
 
   <!-- 《添加版权声明 -->
 <!--添加版权声明https://github.com/JoeyBling/hexo-theme-yilia-plus/commit/c1215e132f6d5621c5fea83d3c4f7ccbcca074a3-->
@@ -628,7 +1167,7 @@
 
 <!-- 添加版权声明》 -->
 
-<!-- 添加版权声明》 -->   
+<!-- 添加版权声明 -->   
        
     </div>
     <div class="article-info article-info-index">
@@ -686,16 +1225,24 @@
       	</div>
     </div>
   </div>
-<!--《添加网站运行时间  <br/>-->
+ 
 
-<!-- 添加网站运行时间》-->
-</footer>
+<!-- 不蒜子统计添加 -->
+<!--<img src="icon.png", width = "15px", height="15px">——添加标签并修改大小-->
 
-  
+
+    <span id="busuanzi_container_site_pv" style="color:#ff0000;font-size:18px;"> 本站总访问量：<span id="busuanzi_value_site_pv" style="color:#ff0000;font-size:18px;"></span>（次）</span>
+    <span class="post-meta-divider">|</span>
+    <span id="busuanzi_container_site_uv" style="color:#ff0000;font-size:18px;">  本站访客数：<span id="busuanzi_value_site_uv" style="color:#ff0000;font-size:18px;"></span>（人次）</span>
+
+<!-- 不蒜子统计添加结束 -->
+</footer>  
    
 
 <!--页面点击小红心-->
 <script type="text/javascript" src="/love.js"></script>
+
+
 
 
     </div>
@@ -721,7 +1268,7 @@ if(!isFinite(o.call(this)))throw RangeError("Invalid time value");var t=this,n=t
 return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var e=r(54),i=r(2),o=e.get,u=e.key;e.exp({getOwnMetadata:function(t,n){return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){var e=r(54),i=r(2),o=r(32),u=e.has,c=e.key,f=function(t,n,r){if(u(t,n,r))return!0;var e=o(n);return null!==e&&f(t,e,r)};e.exp({hasMetadata:function(t,n){return f(t,i(n),arguments.length<3?void 0:c(arguments[2]))}})},function(t,n,r){var e=r(54),i=r(2),o=e.has,u=e.key;e.exp({hasOwnMetadata:function(t,n){return o(t,i(n),arguments.length<3?void 0:u(arguments[2]))}})},function(t,n,r){var e=r(54),i=r(2),o=r(26),u=e.key,c=e.set;e.exp({metadata:function(t,n){return function(r,e){c(t,n,(void 0!==e?i:o)(r),u(e))}}})},function(t,n,r){var e=r(1);e(e.P+e.R,"Set",{toJSON:r(165)("Set")})},function(t,n,r){"use strict";var e=r(1),i=r(147)(!0);e(e.P,"String",{at:function(t){return i(this,t)}})},function(t,n,r){"use strict";var e=r(1),i=r(46),o=r(16),u=r(122),c=r(120),f=RegExp.prototype,a=function(t,n){this._r=t,this._s=n};r(139)(a,"RegExp String",function(){var t=this._r.exec(this._s);return{value:t,done:null===t}}),e(e.P,"String",{matchAll:function(t){if(i(this),!u(t))throw TypeError(t+" is not a regexp!");var n=String(this),r="flags"in f?String(t.flags):c.call(t),e=new RegExp(t.source,~r.indexOf("g")?r:"g"+r);return e.lastIndex=o(t.lastIndex),new a(e,n)}})},function(t,n,r){"use strict";var e=r(1),i=r(181);e(e.P,"String",{padEnd:function(t){return i(this,t,arguments.length>1?arguments[1]:void 0,!1)}})},function(t,n,r){"use strict";var e=r(1),i=r(181);e(e.P,"String",{padStart:function(t){return i(this,t,arguments.length>1?arguments[1]:void 0,!0)}})},function(t,n,r){"use strict";r(82)("trimLeft",function(t){return function(){return t(this,1)}},"trimStart")},function(t,n,r){"use strict";r(82)("trimRight",function(t){return function(){return t(this,2)}},"trimEnd")},function(t,n,r){r(153)("asyncIterator")},function(t,n,r){r(153)("observable")},function(t,n,r){var e=r(1);e(e.S,"System",{global:r(3)})},function(t,n,r){for(var e=r(155),i=r(28),o=r(3),u=r(27),c=r(80),f=r(7),a=f("iterator"),s=f("toStringTag"),l=c.Array,h=["NodeList","DOMTokenList","MediaList","StyleSheetList","CSSRuleList"],v=0;v<5;v++){var p,d=h[v],y=o[d],g=y&&y.prototype;if(g){g[a]||u(g,a,l),g[s]||u(g,s,d),c[d]=l;for(p in e)g[p]||i(g,p,e[p],!0)}}},function(t,n,r){var e=r(1),i=r(151);e(e.G+e.B,{setImmediate:i.set,clearImmediate:i.clear})},function(t,n,r){var e=r(3),i=r(1),o=r(121),u=r(207),c=e.navigator,f=!!c&&/MSIE .\./.test(c.userAgent),a=function(t){return f?function(n,r){return t(o(u,[].slice.call(arguments,2),"function"==typeof n?n:Function(n)),r)}:t};i(i.G+i.B+i.F*f,{setTimeout:a(e.setTimeout),setInterval:a(e.setInterval)})},function(t,n,r){r(330),r(269),r(271),r(270),r(273),r(275),r(280),r(274),r(272),r(282),r(281),r(277),r(278),r(276),r(268),r(279),r(283),r(284),r(236),r(238),r(237),r(286),r(285),r(256),r(266),r(267),r(257),r(258),r(259),r(260),r(261),r(262),r(263),r(264),r(265),r(239),r(240),r(241),r(242),r(243),r(244),r(245),r(246),r(247),r(248),r(249),r(250),r(251),r(252),r(253),r(254),r(255),r(317),r(322),r(329),r(320),r(312),r(313),r(318),r(323),r(325),r(308),r(309),r(310),r(311),r(314),r(315),r(316),r(319),r(321),r(324),r(326),r(327),r(328),r(231),r(233),r(232),r(235),r(234),r(220),r(218),r(224),r(221),r(227),r(229),r(217),r(223),r(214),r(228),r(212),r(226),r(225),r(219),r(222),r(211),r(213),r(216),r(215),r(230),r(155),r(302),r(307),r(184),r(303),r(304),r(305),r(306),r(287),r(183),r(185),r(186),r(342),r(331),r(332),r(337),r(340),r(341),r(335),r(338),r(336),r(339),r(333),r(334),r(288),r(289),r(290),r(291),r(292),r(295),r(293),r(294),r(296),r(297),r(298),r(299),r(301),r(300),r(343),r(369),r(372),r(371),r(373),r(374),r(370),r(375),r(376),r(354),r(357),r(353),r(351),r(352),r(355),r(356),r(346),r(368),r(377),r(345),r(347),r(349),r(348),r(350),r(359),r(360),r(362),r(361),r(364),r(363),r(365),r(366),r(367),r(344),r(358),r(380),r(379),r(378),t.exports=r(52)},function(t,n){function r(t,n){if("string"==typeof n)return t.insertAdjacentHTML("afterend",n);var r=t.nextSibling;return r?t.parentNode.insertBefore(n,r):t.parentNode.appendChild(n)}t.exports=r},,,,,,,,,function(t,n,r){(function(n,r){!function(n){"use strict";function e(t,n,r,e){var i=n&&n.prototype instanceof o?n:o,u=Object.create(i.prototype),c=new p(e||[]);return u._invoke=s(t,r,c),u}function i(t,n,r){try{return{type:"normal",arg:t.call(n,r)}}catch(t){return{type:"throw",arg:t}}}function o(){}function u(){}function c(){}function f(t){["next","throw","return"].forEach(function(n){t[n]=function(t){return this._invoke(n,t)}})}function a(t){function n(r,e,o,u){var c=i(t[r],t,e);if("throw"!==c.type){var f=c.arg,a=f.value;return a&&"object"==typeof a&&m.call(a,"__await")?Promise.resolve(a.__await).then(function(t){n("next",t,o,u)},function(t){n("throw",t,o,u)}):Promise.resolve(a).then(function(t){f.value=t,o(f)},u)}u(c.arg)}function e(t,r){function e(){return new Promise(function(e,i){n(t,r,e,i)})}return o=o?o.then(e,e):e()}"object"==typeof r&&r.domain&&(n=r.domain.bind(n));var o;this._invoke=e}function s(t,n,r){var e=P;return function(o,u){if(e===F)throw new Error("Generator is already running");if(e===M){if("throw"===o)throw u;return y()}for(r.method=o,r.arg=u;;){var c=r.delegate;if(c){var f=l(c,r);if(f){if(f===A)continue;return f}}if("next"===r.method)r.sent=r._sent=r.arg;else if("throw"===r.method){if(e===P)throw e=M,r.arg;r.dispatchException(r.arg)}else"return"===r.method&&r.abrupt("return",r.arg);e=F;var a=i(t,n,r);if("normal"===a.type){if(e=r.done?M:j,a.arg===A)continue;return{value:a.arg,done:r.done}}"throw"===a.type&&(e=M,r.method="throw",r.arg=a.arg)}}}function l(t,n){var r=t.iterator[n.method];if(r===g){if(n.delegate=null,"throw"===n.method){if(t.iterator.return&&(n.method="return",n.arg=g,l(t,n),"throw"===n.method))return A;n.method="throw",n.arg=new TypeError("The iterator does not provide a 'throw' method")}return A}var e=i(r,t.iterator,n.arg);if("throw"===e.type)return n.method="throw",n.arg=e.arg,n.delegate=null,A;var o=e.arg;return o?o.done?(n[t.resultName]=o.value,n.next=t.nextLoc,"return"!==n.method&&(n.method="next",n.arg=g),n.delegate=null,A):o:(n.method="throw",n.arg=new TypeError("iterator result is not an object"),n.delegate=null,A)}function h(t){var n={tryLoc:t[0]};1 in t&&(n.catchLoc=t[1]),2 in t&&(n.finallyLoc=t[2],n.afterLoc=t[3]),this.tryEntries.push(n)}function v(t){var n=t.completion||{};n.type="normal",delete n.arg,t.completion=n}function p(t){this.tryEntries=[{tryLoc:"root"}],t.forEach(h,this),this.reset(!0)}function d(t){if(t){var n=t[w];if(n)return n.call(t);if("function"==typeof t.next)return t;if(!isNaN(t.length)){var r=-1,e=function n(){for(;++r<t.length;)if(m.call(t,r))return n.value=t[r],n.done=!1,n;return n.value=g,n.done=!0,n};return e.next=e}}return{next:y}}function y(){return{value:g,done:!0}}var g,b=Object.prototype,m=b.hasOwnProperty,x="function"==typeof Symbol?Symbol:{},w=x.iterator||"@@iterator",S=x.asyncIterator||"@@asyncIterator",_=x.toStringTag||"@@toStringTag",O="object"==typeof t,E=n.regeneratorRuntime;if(E)return void(O&&(t.exports=E));E=n.regeneratorRuntime=O?t.exports:{},E.wrap=e;var P="suspendedStart",j="suspendedYield",F="executing",M="completed",A={},N={};N[w]=function(){return this};var T=Object.getPrototypeOf,I=T&&T(T(d([])));I&&I!==b&&m.call(I,w)&&(N=I);var k=c.prototype=o.prototype=Object.create(N);u.prototype=k.constructor=c,c.constructor=u,c[_]=u.displayName="GeneratorFunction",E.isGeneratorFunction=function(t){var n="function"==typeof t&&t.constructor;return!!n&&(n===u||"GeneratorFunction"===(n.displayName||n.name))},E.mark=function(t){return Object.setPrototypeOf?Object.setPrototypeOf(t,c):(t.__proto__=c,_ in t||(t[_]="GeneratorFunction")),t.prototype=Object.create(k),t},E.awrap=function(t){return{__await:t}},f(a.prototype),a.prototype[S]=function(){return this},E.AsyncIterator=a,E.async=function(t,n,r,i){var o=new a(e(t,n,r,i));return E.isGeneratorFunction(n)?o:o.next().then(function(t){return t.done?t.value:o.next()})},f(k),k[_]="Generator",k.toString=function(){return"[object Generator]"},E.keys=function(t){var n=[];for(var r in t)n.push(r);return n.reverse(),function r(){for(;n.length;){var e=n.pop();if(e in t)return r.value=e,r.done=!1,r}return r.done=!0,r}},E.values=d,p.prototype={constructor:p,reset:function(t){if(this.prev=0,this.next=0,this.sent=this._sent=g,this.done=!1,this.delegate=null,this.method="next",this.arg=g,this.tryEntries.forEach(v),!t)for(var n in this)"t"===n.charAt(0)&&m.call(this,n)&&!isNaN(+n.slice(1))&&(this[n]=g)},stop:function(){this.done=!0;var t=this.tryEntries[0],n=t.completion;if("throw"===n.type)throw n.arg;return this.rval},dispatchException:function(t){function n(n,e){return o.type="throw",o.arg=t,r.next=n,e&&(r.method="next",r.arg=g),!!e}if(this.done)throw t;for(var r=this,e=this.tryEntries.length-1;e>=0;--e){var i=this.tryEntries[e],o=i.completion;if("root"===i.tryLoc)return n("end");if(i.tryLoc<=this.prev){var u=m.call(i,"catchLoc"),c=m.call(i,"finallyLoc");if(u&&c){if(this.prev<i.catchLoc)return n(i.catchLoc,!0);if(this.prev<i.finallyLoc)return n(i.finallyLoc)}else if(u){if(this.prev<i.catchLoc)return n(i.catchLoc,!0)}else{if(!c)throw new Error("try statement without catch or finally");if(this.prev<i.finallyLoc)return n(i.finallyLoc)}}}},abrupt:function(t,n){for(var r=this.tryEntries.length-1;r>=0;--r){var e=this.tryEntries[r];if(e.tryLoc<=this.prev&&m.call(e,"finallyLoc")&&this.prev<e.finallyLoc){var i=e;break}}i&&("break"===t||"continue"===t)&&i.tryLoc<=n&&n<=i.finallyLoc&&(i=null);var o=i?i.completion:{};return o.type=t,o.arg=n,i?(this.method="next",this.next=i.finallyLoc,A):this.complete(o)},complete:function(t,n){if("throw"===t.type)throw t.arg;return"break"===t.type||"continue"===t.type?this.next=t.arg:"return"===t.type?(this.rval=this.arg=t.arg,this.method="return",this.next="end"):"normal"===t.type&&n&&(this.next=n),A},finish:function(t){for(var n=this.tryEntries.length-1;n>=0;--n){var r=this.tryEntries[n];if(r.finallyLoc===t)return this.complete(r.completion,r.afterLoc),v(r),A}},catch:function(t){for(var n=this.tryEntries.length-1;n>=0;--n){var r=this.tryEntries[n];if(r.tryLoc===t){var e=r.completion;if("throw"===e.type){var i=e.arg;v(r)}return i}}throw new Error("illegal catch attempt")},delegateYield:function(t,n,r){return this.delegate={iterator:d(t),resultName:n,nextLoc:r},"next"===this.method&&(this.arg=g),A}}}("object"==typeof n?n:"object"==typeof window?window:"object"==typeof self?self:this)}).call(n,function(){return this}(),r(158))}])</script><script src="/./main.0cf68a.js"></script><script>!function(){!function(e){var t=document.createElement("script");document.getElementsByTagName("body")[0].appendChild(t),t.setAttribute("src",e)}("/slider.e37972.js")}()</script>
 
 
-
+<script  async  src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     
 <div class="tools-col" q-class="show:isShow,hide:isShow|isFalse" q-on="click:stop(e)">
   <div class="tools-nav header-menu">
@@ -774,7 +1321,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">self-introduction</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">pyplot绘制曲线-1</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">pyplot绘制曲线-2</a>
               </li>
             
             <div class="clearfix"></div>
@@ -931,5 +1490,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
 
 </div>
   </div>
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/chitose.model.json"},"display":{"position":"left","width":300,"height":600,"hOffset":150,"vOffset":-40},"mobile":{"show":true},"react":{"opacity":0.7}});</script></body>
+  
+<!-- 代码块复制功能 -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.js"></script>
+<script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="/js/clipboard_use.js"></script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/chitose.model.json"},"display":{"position":"left","width":250,"height":450,"hOffset":175,"vOffset":250},"mobile":{"show":true},"react":{"opacity":0.6}});</script></body>
+
+
+
 </html>
