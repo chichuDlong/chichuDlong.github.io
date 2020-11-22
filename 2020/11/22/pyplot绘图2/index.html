@@ -9,12 +9,12 @@
   <link rel="dns-prefetch" href="http://example.com">
   <title>pyplot绘图2 | 朔月的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Python读取文本文件(以“.CSV”文件为例)&amp;emsp;使用Python读写文件是非常方便的，掌握Python读写文件的方法之后，对办公效率将有非常大的提升，尤其是面对庞大的数据处理工作时，使用Python更加显得便捷。本文是基于上一文pyplot绘制曲线-1进行的，新的内容增加了对常见文本文件的读取功能，以及多曲线绘制的一些内容。  什么是CSV文件？&amp;emsp;在进行文件读取之前我们首先">
+  <meta name="description" content="Python读取文本文件(以“.CSV”文件为例)&amp;emsp;使用Python读写文件是非常方便的，掌握Python读写文件的方法之后，对办公效率将有非常大的提升，尤其是面对庞大的数据处理工作时，使用Python更加显得便捷。本文是基于上一文pyplot绘制曲线-1进行的，新的内容增加了对常见文本文件的读取功能，以及多曲线绘制的一些内容。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="pyplot绘图2">
 <meta property="og:url" content="http://example.com/2020/11/22/pyplot%E7%BB%98%E5%9B%BE2/index.html">
 <meta property="og:site_name" content="朔月的博客">
-<meta property="og:description" content="Python读取文本文件(以“.CSV”文件为例)&amp;emsp;使用Python读写文件是非常方便的，掌握Python读写文件的方法之后，对办公效率将有非常大的提升，尤其是面对庞大的数据处理工作时，使用Python更加显得便捷。本文是基于上一文pyplot绘制曲线-1进行的，新的内容增加了对常见文本文件的读取功能，以及多曲线绘制的一些内容。  什么是CSV文件？&amp;emsp;在进行文件读取之前我们首先">
+<meta property="og:description" content="Python读取文本文件(以“.CSV”文件为例)&amp;emsp;使用Python读写文件是非常方便的，掌握Python读写文件的方法之后，对办公效率将有非常大的提升，尤其是面对庞大的数据处理工作时，使用Python更加显得便捷。本文是基于上一文pyplot绘制曲线-1进行的，新的内容增加了对常见文本文件的读取功能，以及多曲线绘制的一些内容。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/pyplot%E7%BB%98%E5%9B%BE2/test_data.jpg">
 <meta property="og:image" content="http://example.com/pyplot%E7%BB%98%E5%9B%BE2/output.jpg">
@@ -22,7 +22,7 @@
 <meta property="og:image" content="http://example.com/pyplot%E7%BB%98%E5%9B%BE2/type_change.jpg">
 <meta property="og:image" content="http://example.com/pyplot%E7%BB%98%E5%9B%BE2/result.jpg">
 <meta property="article:published_time" content="2020-11-22T13:13:50.000Z">
-<meta property="article:modified_time" content="2020-11-22T14:48:35.349Z">
+<meta property="article:modified_time" content="2020-11-22T14:56:58.676Z">
 <meta property="article:author" content="朔月">
 <meta property="article:tag" content="pyplot绘制曲线-2">
 <meta name="twitter:card" content="summary">
@@ -293,6 +293,8 @@
 </p></center> 取消中间的第二次标题显示，使用<center></center>可以使该内容居中 -->
       
         <h2 id="Python读取文本文件-以“-CSV”文件为例"><a href="#Python读取文本文件-以“-CSV”文件为例" class="headerlink" title="Python读取文本文件(以“.CSV”文件为例)"></a><strong><em>Python读取文本文件(以“.CSV”文件为例)</em></strong></h2><p>&emsp;使用Python读写文件是非常方便的，掌握Python读写文件的方法之后，对办公效率将有非常大的提升，尤其是面对庞大的数据处理工作时，使用Python更加显得便捷。本文是基于上一文pyplot绘制曲线-1进行的，新的内容增加了对常见文本文件的读取功能，以及多曲线绘制的一些内容。</p>
+<a id="more"></a> 
+
 <hr>
 <h2 id="什么是CSV文件？"><a href="#什么是CSV文件？" class="headerlink" title="什么是CSV文件？"></a><strong><em>什么是CSV文件？</em></strong></h2><p>&emsp;在进行文件读取之前我们首先要知道什么是“*.CSV”文件，这样的文件从何而来？CSV（Comma Separated Values file）文件，即逗号分隔文件，是一种纯文本文件，它使用特定的结构来排列表格数据。因为是纯文本文件，所以CSV只包含实际的文本数据——也就是说CSV可以包含可打印的ASCII或者Unicode字符。</p>
 <p>CSV文件的结构由其名称给出。通常CSV文件使用逗号分隔每个特定的数据值，下面是该结构的样子：<br>column_1_name,    colum_2 name,     colum_3 name<br>first_row_data_1, first_row_data_2, first_row_data_3<br>second_row_data_1, second_row_data_2, second_row_data_3  </p>
@@ -693,11 +695,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">self-introduction</a>
+                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+                <a href="javascript:void(0)" class="js-tag color3">self-introduction</a>
               </li>
              
               <li class="article-tag-list-item">
