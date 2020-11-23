@@ -140,4 +140,5 @@ pl.savefig('filename.png',dpi=600)
 pl.show()   
 ```
 结果如下：
-![](/pyplot绘图/filename.png)
+
+{% asset_img filename.jpg %}
