@@ -92,7 +92,8 @@ for row in test:
    print(row)
 ```
 >>输出结果如下：
-{% asset_img output.jpg %}
+
+{% asset_img out.jpg %}
 
 >2.数据转换为列表之后，数据（除了第一列数据的名称）可以简单的分为行、列，我们可以根据需要对行、列数据进行利用（这里仅进行了输出显示）。
 ```
@@ -106,7 +107,8 @@ for i in test:
     print(type(test[0][0]))
 ```
 >>行、列测试结果如下：
-{% asset_img column_and_row.jpg %}
+
+{% asset_img row.jpg %}
 
 >3.使用Python读取文件信息后数据均保存为字符串类型，如果要使用其进行绘图，就需要将其转换为数字，根据需要本例中转换为小数。
 ```
