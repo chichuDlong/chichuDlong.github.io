@@ -226,6 +226,8 @@ https://ianlunn.github.io/Hover/ */
 /*版权声明的样式》*/
 
 
+<<<<<<< HEAD
+=======
 /* 文章中的超链接,鼠标悬浮特效*/
 .article-entry a{
     display: inline-block;
@@ -261,3 +263,4 @@ https://ianlunn.github.io/Hover/ */
   transform-origin: bottom center;
   transition: transform 0.5s ease-out;
 }
+>>>>>>> a79465287c391904e4f8190467e96440bed3cc5b
